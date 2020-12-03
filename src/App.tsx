@@ -36,7 +36,9 @@ class App extends Component<IAppProps, IAppState> {
           <li>Add styling of your choice to your components/ elements in the components - both with inline styles and stylesheets</li>
         </ol>
 
-        <UserInput />
+        <UserInput
+          changed={this.usernameChangedHandler}
+          currentName={this.state.username} />
         <UserOutput userName={this.state.username} />
         <UserOutput userName={this.state.username} />
         <UserOutput userName="Max" />
